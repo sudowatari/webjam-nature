@@ -5,22 +5,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Satisfy', cursive;
 }
 
 .grid {
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 2rem 4rem;
 }
 
 /* card editing */
-
-/* .card {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-} */
 
 img {
     width: 100%;
@@ -35,7 +30,7 @@ img {
     perspective: 1000px;
 }
 
-.flip-card-inner {
+ .flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -64,14 +59,30 @@ img {
 }
 
 .flip-card-back {
-    background-color: dodgerblue;
-    color: white;
+    background-color: #CDF0EA;
+    color: #515E63;
     transform: rotateY(180deg);
-}
+} 
 
 /* modal stuff */
 
-.modal {
+button {
+    font-size: 1.4rem;
+    font-family: 'Nanum Pen Script', cursive;
+    padding: 0.4rem;
+    width: 60%;
+    background-color: #57837B;
+    border-radius: 20px;
+    color: #F1ECC3;
+    border: 1px solid rgba(8, 61, 0, 0.342);
+    transition: all 0.3s;
+}
+
+button:hover{
+    background-color: #87A8A4;
+}
+
+.modal, .sfModal {
     display: none;
     position: fixed;
     left: 0;
@@ -84,15 +95,16 @@ img {
 }
 
 .modal-content {
-    width: 80%;
+    width: 60%;
     max-width: 40rem;
-    background-color: red;
+    background-color: #ddddddc5;
     margin: 15% auto;
     padding: 1rem;
     border: 1px solid #fff;
     text-align: center;
     position: relative;
-    animation: slide ease 0.8;
+    animation: slide ease 0.8s;
+    font-family: 'Mali', cursive;
 }
 
 @keyframes slide {
