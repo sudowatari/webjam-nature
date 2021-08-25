@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: url('/img/meadows.jpg') center;
+    background: url('img/meadows.jpg') center;
     display: flex;
     justify-content: center;
     align-items: center;
